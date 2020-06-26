@@ -37,7 +37,7 @@ pipeline{
         sh 'cd ../awspro@2/dist'
         sh 'echo $PWD'
         //sh 'aws s3 ls s3://ravi-varma-devulapally-new-1-2-com'
-        sh 'aws s3 sync . s3://ravi-varma-devulapally-new-1-2-com/ --region us-east-1'
+        sh 'aws s3 sync ../awspro@2/ s3://ravi-varma-devulapally-new-1-2-com/ --region us-east-1'
       } 
        }
    }
